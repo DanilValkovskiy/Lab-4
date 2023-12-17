@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, num3;
+
+    // Введення трьох цілих чисел
+    cout << "Enter the first number: ";
+    cin >> num1;
+
+    cout << "Enter the second number: ";
+    cin >> num2;
+
+    cout << "Enter the third number: ";
+    cin >> num3;
+
+    // Перевірка наявності співпадаючих чисел
+    if (num1 == num2 || num1 == num3 || num2 == num3) {
+        cout << "There is at least one pair of matching numbers." << endl;
+    } else {
+        cout << "There are no pairs of matching numbers." << endl;
+    }
+
+    return 0;
+}
